@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Subtitle Enhancer For Hotstar and Zee5",
+  "version": "1.0",
+  "description": "Customize subtitles on Hotstar and Zee5.",
+  "permissions": ["storage"],
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://www.zee5.com/*",
+      "https://www.hotstar.com/*",
+      "https://www.jiohotstar.com/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}

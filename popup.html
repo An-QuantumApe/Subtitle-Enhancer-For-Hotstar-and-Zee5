@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+body{width:310px;padding:14px;background:#111827;color:#fff;font-family:Segoe UI,sans-serif}
+.card{background:#1f2937;border-radius:12px;padding:14px}
+h2{text-align:center;margin:0 0 12px}
+.setting{margin-bottom:14px}
+label{display:flex;justify-content:space-between}
+input[type=range]{width:100%}
+.value{color:#93c5fd}
+button{width:100%;padding:8px;border:0;border-radius:8px;background:#374151;color:#fff}
+.small{text-align:center;color:#9ca3af;font-size:11px;margin-top:8px}
+</style></head><body>
+<div class="card">
+<h2>Subtitle Enhancer</h2>
+<div class="setting"><label>Size <span id="sizeVal" class="value"></span></label><input id="size" type="range" min="20" max="80"></div>
+<div class="setting"><label>Position <span id="positionVal" class="value"></span></label><input id="position" type="range" min="-300" max="300"></div>
+<div class="setting"><label>Line Height <span id="lineHeightVal" class="value"></span></label><input id="lineHeight" type="range" min="1" max="3" step="0.1"></div>
+<div><input id="bold" type="checkbox"> Bold Text</div>
+<div><input id="outline" type="checkbox"> Black Outline</div><br>
+<button id="reset">Reset Defaults</button>
+<div class="small">Version 1.0</div>
+</div>
+<script src="popup.js"></script>
+</body></html>
